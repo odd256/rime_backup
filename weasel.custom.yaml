@@ -43,7 +43,7 @@ patch:
     color_scheme_dark: "wechat_dark"
     display_tray_icon: false
     enhanced_position: false
-    font_point: 12
+    font_point: 14
     font_face: "霞鹜文楷"
     horizontal: true
     inline_preedit: true
