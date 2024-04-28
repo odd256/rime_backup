@@ -44,6 +44,7 @@ patch:
     display_tray_icon: false
     enhanced_position: false
     font_point: 12
+    font_face: "霞鹜文楷"
     horizontal: true
     inline_preedit: true
     label_font_point: 10
