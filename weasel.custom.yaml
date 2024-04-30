@@ -42,8 +42,8 @@ patch:
     enhanced_position: true
     align_type: center
     font_face: "霞鹜文楷"
-    font_point: 14
-    label_font_point: 12
+    font_point: 12
+    label_font_point: 10
     horizontal: true
     inline_preedit: true
     layout: {border: 1, margin_x: 8, margin_y: 8, hilite_padding: 2, hilite_spacing: 5, round_corner: 5, corner_radius: 5}
