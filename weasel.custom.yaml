@@ -7,45 +7,43 @@ customization:
 patch:
   show_notifications: false                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
   "preset_color_schemes/wechat_light":
-    name: "wechat_light"
-    author: zsakvo
+    name: "微信／wechat/light"
     back_color: 0xFFFFFF
-    border_color: 0xDDDDDD
-    candidate_text_color: 0x525252
-    comment_text_color: 0x999999
-    hilited_back_color: 0xDDDDDD
-    hilited_candidate_back_color: 0x75B100
-    hilited_candidate_text_color: 0xFFFFFF
-    hilited_comment_text_color: 0x999999
-    hilited_label_color: 0xFFFFFF
-    hilited_text_color: 0x424242
-    label_color: 0x828282
-    text_color: 0x424242
-
+    border_color: 0x9F9F9F
+    text_color: 0x202121
+    hilited_label_color: 0xDBDBDB
+    hilited_text_color: 0x202121
+    hilited_back_color: 0xE4EBF0
+    hilited_candidate_text_color: 0xF8FBF4
+    hilited_candidate_back_color: 0x78AF22 # 微信绿 0x78AF22，魅蓝紫 0xC73262，活力橙 0x2283D9
+    hilited_comment_text_color: 0xDBDBDB
+    candidate_text_color: 0x555555
+    comment_text_color: 0x9F9F9F
+  
   "preset_color_schemes/wechat_dark":
-    name: "wechat_dark"
-    author: shlroland
+    name: "微信／wechat/dark"
     back_color: 0x151515
     border_color: 0x151515
-    candidate_text_color: 0xFFFFFF
-    comment_text_color: 0xAEAEAE
-    hilited_back_color: 0xDDDDDD
-    hilited_candidate_back_color: 0x75B100
-    hilited_candidate_text_color: 0xFFFFFF
-    hilited_comment_text_color: 0x999999
+    text_color: 0xBBBBBB
+    label_color: 0x777777
     hilited_label_color: 0xFFFFFF
     hilited_text_color: 0x424242
-    label_color: 0x777777
-    text_color: 0xBBBBBB
+    hilited_back_color: 0xDDDDDD
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_candidate_back_color: 0x75B100 # 微信绿 0x78AF22，魅蓝紫 0xC73262，活力橙 0x2283D9
+    hilited_comment_text_color: 0x999999
+    candidate_text_color: 0xFFFFFF
+    comment_text_color: 0xAEAEAE
 
   style:
     color_scheme: "wechat_light"
     color_scheme_dark: "wechat_dark"
     display_tray_icon: false
-    enhanced_position: false
-    font_point: 14
+    enhanced_position: true
+    align_type: center
     font_face: "霞鹜文楷"
+    font_point: 14
+    label_font_point: 12
     horizontal: true
     inline_preedit: true
-    label_font_point: 10
-    layout: {border: 1, corner_radius: 5, hilite_padding: 5, hilite_spacing: 5, margin: 5, round_corner: 5}
+    layout: {border: 1, margin_x: 8, margin_y: 8, hilite_padding: 2, hilite_spacing: 5, round_corner: 5, corner_radius: 5}
