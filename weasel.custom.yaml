@@ -5,7 +5,7 @@ customization:
   modified_time: "Mon Feb 26 20:39:14 2024"
   rime_version: 1.8.5
 patch:
-  show_notifications: false                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
+  show_notifications: false # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
   "preset_color_schemes/wechat_light":
     name: "微信／wechat/light"
     back_color: 0xFFFFFF
@@ -19,7 +19,7 @@ patch:
     hilited_comment_text_color: 0xDBDBDB
     candidate_text_color: 0x555555
     comment_text_color: 0x9F9F9F
-  
+
   "preset_color_schemes/wechat_dark":
     name: "微信／wechat/dark"
     back_color: 0x151515
@@ -38,12 +38,30 @@ patch:
   style:
     color_scheme: "wechat_light"
     color_scheme_dark: "wechat_dark"
+    label_format: "%s."
+    layout:
+      baseline: 0 # 字号百分比，与 linespacing 一同设置可解决字体跳动问题，设置为 0 为禁用
+      linespacing: 0 # 字号百分比，参考 <https://github.com/rime/weasel/pull/1177>
+      align_type: center # 标签、候选文字、注解文字之间的相对对齐方式：top ; center ; bottom
+      max_height: 600 # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
+      max_width: 0 # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
+      min_height: 0 # 候选框最小高度
+      min_width: 10 # 候选框最小宽度
+      border_width: 1 # 边框宽度；又名 border
+      margin_x: 14 # 主体元素和候选框的左右边距；为负值时，不显示候选框
+      margin_y: 12 # 主体元素的上下边距；为负值时，不显示候选框
+      candidate_spacing: 22 # 候选项之间的间距
+      hilite_spacing: 6 # 候选项和相应标签的间距
+      hilite_padding_x: 8 # 高亮区域和内部文字的左右间距，如无特殊指定则依 hilite_padding 设置
+      hilite_padding_y: 6 # 高亮区域和内部文字的上下间距，如无特殊指定则依 hilite_padding 设置
+      corner_radius: 12 # 候选窗口圆角半径
+      round_corner: 8 # 候选背景色块圆角半径，又名 hilited_corner_radius
     display_tray_icon: false
-    enhanced_position: true
-    align_type: center
-    font_face: "霞鹜文楷"
-    font_point: 12
+    enhanced_position: false
+    hover_type: hilite
+    label_font_face: "MiSans"
     label_font_point: 10
+    font_face: "Noto Color Emoji:30:39, MiSans, MiSans L3, Noto Color Emoji"
+    font_point: 13
     horizontal: true
     inline_preedit: true
-    layout: {border: 1, margin_x: 8, margin_y: 8, hilite_padding: 2, hilite_spacing: 5, round_corner: 5, corner_radius: 5}
